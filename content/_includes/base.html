@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title | default: metadata.title }}</title>
+    <meta name="description" content="{{ description | default: metadata.description }}" />
+
+    <!-- https://github.com/kognise/water.css -->
+    <link rel="stylesheet" href="/water.min.css" />
+  </head>
+  <body>
+    <nav>
+        <strong>Buchmiller Org</strong>
+        &nbsp;&nbsp;
+        <a href="/">Home</a> |
+        <a href="/blog">Blog</a> |
+        <a href="/about">About</a>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+  </body>
+</html>
